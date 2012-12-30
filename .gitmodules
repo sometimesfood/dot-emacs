@@ -1,3 +1,6 @@
 [submodule "elisp/package-spec"]
 	path = elisp/package-spec
 	url = git://github.com/rejeep/package-spec.git
+[submodule "elisp/carton"]
+	path = elisp/carton
+	url = git://github.com/rejeep/carton.git

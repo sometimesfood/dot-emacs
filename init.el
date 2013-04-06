@@ -6,7 +6,26 @@
 
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+;; (menu-bar-mode -1)
+(setq inhibit-startup-message t)
+
+(column-number-mode 1)
+
+(setq indent-tabs-mode nil)
+
+(setq c-default-style "linux"
+      c-basic-offset 4)
+
+(defun my-c-mode-hook ()
+  (setq indent-tabs-mode nil)
+  (c-set-offset 'innamespace 0))
+(add-hook 'c++-mode-hook 'my-c-mode-hook)
 
 (package-initialize)
 (require 'color-theme)
 (color-theme-solarized-light)
+
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+
+(setq org-latex-to-pdf-process (list "latexmk -pdf %f"))

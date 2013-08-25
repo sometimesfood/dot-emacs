@@ -1,5 +1,5 @@
 ;; -*- mode: Lisp -*-
-(source "melpa" "http://melpa.milkbox.net/packages/")
+(source melpa)
 (depends-on "solarized-theme")
 (depends-on "haskell-mode")
 ;; (depends-on "magit")

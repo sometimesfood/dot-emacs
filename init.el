@@ -22,8 +22,7 @@
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
 
 (package-initialize)
-(require 'color-theme)
-(color-theme-solarized-light)
+(load-theme 'solarized-light t)
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)

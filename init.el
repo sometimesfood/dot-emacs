@@ -1,9 +1,11 @@
+(defvar sometimesfood-base-dir (file-name-directory load-file-name)
+  "The base directory of this Emacs configuration.")
+
+(add-to-list 'load-path (expand-file-name "modules" sometimesfood-base-dir))
+(require 'sometimesfood-packages)
+
 (add-hook 'text-mode-hook
 	  (lambda () (set-input-method "german-postfix")))
-
-(add-to-list 'load-path "~/.emacs.d/elisp/cask/")
-(require 'cask)
-(cask-initialize)
 
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
@@ -22,7 +24,6 @@
   (c-set-offset 'innamespace 0))
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
 
-(package-initialize)
 (load-theme 'solarized-light t)
 
 (put 'upcase-region 'disabled nil)

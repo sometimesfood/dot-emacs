@@ -3,16 +3,10 @@
 
 (add-to-list 'load-path (expand-file-name "modules" sometimesfood-base-dir))
 (require 'sometimesfood-packages)
+(require 'sometimesfood-appearance)
 
 (add-hook 'text-mode-hook
 	  (lambda () (set-input-method "german-postfix")))
-
-(tool-bar-mode -1)
-(scroll-bar-mode -1)
-(menu-bar-mode -1)
-(setq inhibit-startup-message t)
-
-(column-number-mode 1)
 
 (setq indent-tabs-mode nil)
 
@@ -23,8 +17,6 @@
   (setq indent-tabs-mode nil)
   (c-set-offset 'innamespace 0))
 (add-hook 'c++-mode-hook 'my-c-mode-hook)
-
-(load-theme 'solarized-light t)
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)

@@ -6,6 +6,7 @@
 (prefer-coding-system 'utf-8)
 
 (setq indent-tabs-mode nil)
+(setq require-final-newline t)
 
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)

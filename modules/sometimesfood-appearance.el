@@ -5,7 +5,7 @@
 
 (if (macosx-p)
     (progn
-      (set-default-font "Menlo-14")
+      (set-frame-font "Menlo-14")
       (menu-bar-mode 1))
   (menu-bar-mode -1))
 

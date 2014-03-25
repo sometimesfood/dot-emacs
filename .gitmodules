@@ -1,3 +1,0 @@
-[submodule "elisp/cask"]
-	path = elisp/cask
-	url = git://github.com/rejeep/cask.el.git

@@ -12,4 +12,5 @@
 
 ;; programming languages
 (require 'sometimesfood-cpp)
+(require 'sometimesfood-elisp)
 (require 'sometimesfood-haskell)

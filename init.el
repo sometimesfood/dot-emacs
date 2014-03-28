@@ -9,6 +9,7 @@
 (require 'sometimesfood-basics)
 (require 'sometimesfood-appearance)
 (require 'sometimesfood-keybindings)
+(require 'sometimesfood-helm)
 
 ;; programming languages
 (require 'sometimesfood-cpp)

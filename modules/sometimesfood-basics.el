@@ -24,4 +24,6 @@
 ;; check out icomplete-show-matches-on-no-input on Emacs 24.4
 ;; (icomplete-mode 1)
 
+(setq ring-bell-function (lambda () (message "*beep*")))
+
 (provide 'sometimesfood-basics)

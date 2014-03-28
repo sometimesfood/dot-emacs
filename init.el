@@ -10,6 +10,7 @@
 (require 'sometimesfood-appearance)
 (require 'sometimesfood-keybindings)
 (require 'sometimesfood-helm)
+(require 'sometimesfood-multiple-cursors)
 
 ;; programming languages
 (require 'sometimesfood-cpp)

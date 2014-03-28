@@ -2,7 +2,8 @@
   (file-name-directory load-file-name)
   "The base directory of this Emacs configuration.")
 
-(add-to-list 'load-path (expand-file-name "modules" sometimesfood-base-dir))
+(add-to-list 'load-path
+             (expand-file-name "modules" sometimesfood-base-dir))
 
 (require 'sometimesfood-packages)
 (require 'sometimesfood-basics)

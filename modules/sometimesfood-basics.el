@@ -5,7 +5,7 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
-(setq indent-tabs-mode nil)
+(setq-default indent-tabs-mode nil)
 (setq require-final-newline t)
 
 (put 'upcase-region 'disabled nil)
@@ -17,7 +17,7 @@
 (recentf-mode t)
 
 (add-hook 'text-mode-hook
-	  (lambda () (set-input-method "german-postfix")))
+          (lambda () (set-input-method "german-postfix")))
 
 (iswitchb-mode 1)
 (setq iswitchb-buffer-ignore '("^ " "*Completions*" "*Messages*"))

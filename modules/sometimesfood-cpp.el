@@ -2,8 +2,8 @@
       c-basic-offset 4)
 
 (add-hook 'c++-mode-hook
-	  (lambda ()
-	    (setq indent-tabs-mode nil)
-	    (c-set-offset 'innamespace 0)))
+          (lambda ()
+            (setq indent-tabs-mode nil)
+            (c-set-offset 'innamespace 0)))
 
 (provide 'sometimesfood-cpp)

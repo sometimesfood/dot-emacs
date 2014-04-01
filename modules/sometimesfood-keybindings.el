@@ -6,5 +6,6 @@
 
 (global-set-key (kbd "C-c h") 'helm-prelude)
 (global-unset-key [(control z)])
+(ffap-bindings)
 
 (provide 'sometimesfood-keybindings)

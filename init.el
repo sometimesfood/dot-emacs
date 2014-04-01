@@ -17,3 +17,4 @@
 (require 'sometimesfood-cpp)
 (require 'sometimesfood-elisp)
 (require 'sometimesfood-haskell)
+(require 'sometimesfood-ruby)

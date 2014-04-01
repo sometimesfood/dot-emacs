@@ -13,6 +13,7 @@
 (require 'sometimesfood-multiple-cursors)
 
 ;; programming languages
+(require 'sometimesfood-bibtex)
 (require 'sometimesfood-cpp)
 (require 'sometimesfood-elisp)
 (require 'sometimesfood-haskell)

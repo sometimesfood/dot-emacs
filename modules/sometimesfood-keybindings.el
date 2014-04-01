@@ -5,5 +5,6 @@
   (setq mac-option-modifier nil))
 
 (global-set-key (kbd "C-c h") 'helm-prelude)
+(global-unset-key [(control z)])
 
 (provide 'sometimesfood-keybindings)

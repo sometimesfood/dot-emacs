@@ -26,4 +26,8 @@
 
 (setq ring-bell-function (lambda () (message "*beep*")))
 
+;; auto refresh buffers, but be quiet about it
+(global-auto-revert-mode 1)
+(setq auto-revert-verbose nil)
+
 (provide 'sometimesfood-basics)

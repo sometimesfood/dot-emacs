@@ -1,6 +1,5 @@
-(ensure-installed 'minitest)
-(require 'minitest)
-
-(add-hook 'ruby-mode-hook 'minitest-mode)
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (setq compile-command "bundle exec rake test")))
 
 (provide 'sometimesfood-ruby)

@@ -11,4 +11,7 @@
 
 (load-theme 'solarized-light t)
 
+(require 'uniquify)
+(setq uniquify-buffer-name-style 'forward)
+
 (provide 'sometimesfood-appearance)

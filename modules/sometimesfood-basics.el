@@ -38,4 +38,10 @@
       kept-old-versions 2
       version-control t)
 
+(defun add-to-auto-mode-alist (mode regexps)
+  (mapcar
+   (lambda (regexp)
+     (add-to-list 'auto-mode-alist `(,regexp . ,mode)))
+   regexps))
+
 (provide 'sometimesfood-basics)

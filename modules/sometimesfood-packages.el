@@ -1,6 +1,6 @@
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa" . "http://melpa.milkbox.net/packages/"))
+             '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
 (package-initialize)
 
 (defun ensure-installed (package)
@@ -15,6 +15,7 @@
 (ensure-installed 'zenburn-theme)
 (ensure-installed 'haskell-mode)
 (ensure-installed 'magit)
-(ensure-installed 'dired-single)
+;; TODO: add dired-single package to melpa-stable
+;(ensure-installed 'dired-single)
 
 (provide 'sometimesfood-packages)

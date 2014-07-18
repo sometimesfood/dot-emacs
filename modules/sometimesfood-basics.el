@@ -38,6 +38,9 @@
       kept-old-versions 2
       version-control t)
 
+;; chmod +x files that have a shebang
+(add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
+
 (defun add-to-auto-mode-alist (mode regexps)
   (mapcar
    (lambda (regexp)

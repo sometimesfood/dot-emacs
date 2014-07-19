@@ -15,7 +15,11 @@
 (ensure-installed 'zenburn-theme)
 (ensure-installed 'haskell-mode)
 (ensure-installed 'magit)
+(ensure-installed 'yasnippet)
+
 ;; TODO: add dired-single package to melpa-stable
 ;(ensure-installed 'dired-single)
+
+
 
 (provide 'sometimesfood-packages)

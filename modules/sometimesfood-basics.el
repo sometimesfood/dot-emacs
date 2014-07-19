@@ -47,4 +47,6 @@
      (add-to-list 'auto-mode-alist `(,regexp . ,mode)))
    regexps))
 
+(yas-global-mode 1)
+
 (provide 'sometimesfood-basics)

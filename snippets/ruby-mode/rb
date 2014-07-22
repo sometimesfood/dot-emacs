@@ -1,0 +1,5 @@
+# name: /usr/bin/env ruby
+# key: rb
+# condition: (eq 1 (line-number-at-pos))
+# --
+#!/usr/bin/env ruby

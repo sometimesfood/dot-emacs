@@ -11,6 +11,7 @@
 (require 'sometimesfood-keybindings)
 (require 'sometimesfood-helm)
 (require 'sometimesfood-multiple-cursors)
+(require 'sometimesfood-yasnippet)
 
 ;; programming languages
 (require 'sometimesfood-bibtex)

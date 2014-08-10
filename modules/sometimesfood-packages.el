@@ -16,10 +16,9 @@
 (ensure-installed 'haskell-mode)
 (ensure-installed 'magit)
 (ensure-installed 'yasnippet)
+(ensure-installed 'ledger-mode)
 
 ;; TODO: add dired-single package to melpa-stable
 ;(ensure-installed 'dired-single)
-
-
 
 (provide 'sometimesfood-packages)

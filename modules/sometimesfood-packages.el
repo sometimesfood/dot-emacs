@@ -19,6 +19,7 @@
 (ensure-installed 'ledger-mode)
 (ensure-installed 'markdown-mode)
 (ensure-installed 'haml-mode)
+(ensure-installed 'scss-mode)
 
 ;; TODO: add dired-single package to melpa-stable
 ;(ensure-installed 'dired-single)

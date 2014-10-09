@@ -50,4 +50,6 @@
      (add-to-list 'auto-mode-alist `(,regexp . ,mode)))
    regexps))
 
+(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
+
 (provide 'sometimesfood-basics)

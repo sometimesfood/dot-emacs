@@ -17,6 +17,8 @@
 (ensure-installed 'magit)
 (ensure-installed 'yasnippet)
 (ensure-installed 'ledger-mode)
+(ensure-installed 'markdown-mode)
+(ensure-installed 'haml-mode)
 
 ;; TODO: add dired-single package to melpa-stable
 ;(ensure-installed 'dired-single)

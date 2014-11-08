@@ -46,6 +46,9 @@
      (add-to-list 'auto-mode-alist `(,regexp . ,mode)))
    regexps))
 
+(if (macosx-p)
+    (setq dired-use-ls-dired nil))
+
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
 (provide 'sometimesfood-basics)

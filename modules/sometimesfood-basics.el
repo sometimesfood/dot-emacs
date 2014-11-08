@@ -19,10 +19,9 @@
       recentf-max-menu-items 15)
 (recentf-mode t)
 
-(iswitchb-mode 1)
-(setq iswitchb-buffer-ignore '("^ " "*Completions*" "*Messages*"))
-;; check out icomplete-show-matches-on-no-input on Emacs 24.4
-;; (icomplete-mode 1)
+(ido-mode 1)
+(setq ido-ignore-buffers
+      '("\\` " "^\*Messages" "^\*Back" "^\*Compile" "^\*helm" "^\*Completion"))
 
 (setq ring-bell-function (lambda () (message "*beep*")))
 

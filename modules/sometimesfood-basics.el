@@ -19,9 +19,6 @@
       recentf-max-menu-items 15)
 (recentf-mode t)
 
-(add-hook 'text-mode-hook
-          (lambda () (set-input-method "german-postfix")))
-
 (iswitchb-mode 1)
 (setq iswitchb-buffer-ignore '("^ " "*Completions*" "*Messages*"))
 ;; check out icomplete-show-matches-on-no-input on Emacs 24.4

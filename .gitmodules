@@ -1,0 +1,3 @@
+[submodule "submodules/fixmelpa"]
+	path = submodules/fixmelpa
+	url = https://github.com/jorgenschaefer/fixmelpa.git

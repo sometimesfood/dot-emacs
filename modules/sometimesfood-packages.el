@@ -1,7 +1,18 @@
 (require 'package)
 (add-to-list 'package-archives
-             '("melpa-stable" . "http://melpa-stable.milkbox.net/packages/") t)
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
+
+;; pin packages to stable MELPA version if possible
+(add-to-list 'load-path
+             (expand-file-name "submodules/fixmelpa" sometimesfood-base-dir))
+(require 'fixmelpa)
+(defadvice package-refresh-contents
+    (before ad-fixmelpa-refresh-pinned-packages)
+  "Refresh pinned packages before refreshing package contents."
+  (fixmelpa-refresh-pinned-packages))
 
 (defun ensure-installed (package)
   "Check if package is installed, install it if not"
@@ -20,8 +31,7 @@
 (ensure-installed 'markdown-mode)
 (ensure-installed 'haml-mode)
 (ensure-installed 'scss-mode)
-
-;; TODO: add dired-single package to melpa-stable
-;(ensure-installed 'dired-single)
+(ensure-installed 'dired-single)
+(ensure-installed 'go-mode)
 
 (provide 'sometimesfood-packages)

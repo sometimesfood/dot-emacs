@@ -3,7 +3,7 @@
 (setq inhibit-startup-screen t)
 (column-number-mode 1)
 
-(if (macosx-p)
+(if (and (macosx-p) (gui-p))
     (progn
       (set-frame-font "Menlo-14")
       (menu-bar-mode 1))

@@ -1,6 +1,9 @@
 (defun macosx-p()
   (string= "darwin" system-type))
 
+(defun gui-p()
+  (not (null window-system)))
+
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
 (add-to-list 'exec-path "/usr/local/bin")
 

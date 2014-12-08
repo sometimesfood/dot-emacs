@@ -5,6 +5,9 @@
 (add-to-list 'load-path
              (expand-file-name "modules" sometimesfood-base-dir))
 
+(setq custom-file (expand-file-name "custom.el" sometimesfood-base-dir))
+(load custom-file)
+
 (require 'sometimesfood-packages)
 (require 'sometimesfood-basics)
 (require 'sometimesfood-appearance)

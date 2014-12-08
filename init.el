@@ -16,6 +16,7 @@
 (require 'sometimesfood-multiple-cursors)
 (require 'sometimesfood-webdev)
 (require 'sometimesfood-yasnippet)
+(require 'sometimesfood-mouse)
 
 ;; programming languages
 (require 'sometimesfood-bibtex)

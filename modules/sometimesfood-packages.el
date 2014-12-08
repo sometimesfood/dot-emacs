@@ -33,5 +33,7 @@
 (ensure-installed 'scss-mode)
 (ensure-installed 'dired-single)
 (ensure-installed 'go-mode)
+(ensure-installed 'paredit)
+(ensure-installed 'highlight-parentheses)
 
 (provide 'sometimesfood-packages)

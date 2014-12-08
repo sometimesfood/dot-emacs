@@ -8,4 +8,9 @@ compiled file exists."
 
 (add-hook 'after-save-hook 'byte-compile-current-buffer)
 
+(add-hook 'emacs-lisp-mode-hook
+          (lambda ()
+            (paredit-mode)
+            (highlight-parentheses-mode)))
+
 (provide 'sometimesfood-elisp)

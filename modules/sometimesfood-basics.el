@@ -54,4 +54,8 @@
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (electric-pair-mode)))
+
 (provide 'sometimesfood-basics)

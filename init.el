@@ -17,6 +17,7 @@
 (require 'sometimesfood-webdev)
 (require 'sometimesfood-yasnippet)
 (require 'sometimesfood-mouse)
+(require 'sometimesfood-dired)
 
 ;; programming languages
 (require 'sometimesfood-bibtex)

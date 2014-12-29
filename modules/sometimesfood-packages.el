@@ -35,5 +35,6 @@
 (ensure-installed 'go-mode)
 (ensure-installed 'paredit)
 (ensure-installed 'highlight-parentheses)
+(ensure-installed 'cider)
 
 (provide 'sometimesfood-packages)

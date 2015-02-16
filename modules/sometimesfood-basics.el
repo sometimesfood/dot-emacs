@@ -58,4 +58,7 @@
           (lambda ()
             (electric-pair-mode)))
 
+;; enable narrow-to-region
+(put 'narrow-to-region 'disabled nil)
+
 (provide 'sometimesfood-basics)

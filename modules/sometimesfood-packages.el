@@ -30,6 +30,7 @@
 (ensure-installed 'ledger-mode)
 (ensure-installed 'markdown-mode)
 (ensure-installed 'haml-mode)
+(ensure-installed 'coffee-mode)
 (ensure-installed 'scss-mode)
 (ensure-installed 'yaml-mode)
 (ensure-installed 'dired-single)

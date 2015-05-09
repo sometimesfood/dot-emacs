@@ -50,7 +50,7 @@
    regexps))
 
 (if (macosx-p)
-    (setq dired-use-ls-dired nil))
+    (setq insert-directory-program (executable-find "gls")))
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 

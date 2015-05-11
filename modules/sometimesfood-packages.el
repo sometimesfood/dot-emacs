@@ -39,4 +39,7 @@
 (ensure-installed 'highlight-parentheses)
 (ensure-installed 'cider)
 
+(when (macosx-p)
+  (ensure-installed 'dash-at-point))
+
 (provide 'sometimesfood-packages)

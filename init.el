@@ -8,8 +8,8 @@
 (setq custom-file (expand-file-name "custom.el" sometimesfood-base-dir))
 (load custom-file)
 
-(require 'sometimesfood-packages)
 (require 'sometimesfood-basics)
+(require 'sometimesfood-packages)
 (require 'sometimesfood-appearance)
 (require 'sometimesfood-keybindings)
 (require 'sometimesfood-helm)

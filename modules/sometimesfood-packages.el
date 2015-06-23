@@ -41,6 +41,7 @@
 (ensure-installed 'gist)
 
 (when (macosx-p)
-  (ensure-installed 'dash-at-point))
+  (ensure-installed 'dash-at-point)
+  (ensure-installed 'reveal-in-finder))
 
 (provide 'sometimesfood-packages)

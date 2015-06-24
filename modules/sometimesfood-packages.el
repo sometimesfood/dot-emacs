@@ -39,6 +39,7 @@
 (ensure-installed 'highlight-parentheses)
 (ensure-installed 'cider)
 (ensure-installed 'gist)
+(ensure-installed 'google-c-style)
 
 (when (macosx-p)
   (ensure-installed 'dash-at-point)

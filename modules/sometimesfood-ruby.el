@@ -1,6 +1,7 @@
 (add-hook 'ruby-mode-hook
           (lambda ()
-            (setq compile-command "bundle exec rake test")))
+            (set (make-local-variable 'compile-command)
+                 "bundle exec rake test")))
 
 (add-to-auto-mode-alist
  'ruby-mode

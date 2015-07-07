@@ -25,3 +25,4 @@
 (require 'sometimesfood-elisp)
 (require 'sometimesfood-haskell)
 (require 'sometimesfood-ruby)
+(require 'sometimesfood-clojure)

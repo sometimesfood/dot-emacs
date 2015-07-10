@@ -54,9 +54,7 @@
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-(add-hook 'prog-mode-hook
-          (lambda ()
-            (electric-pair-mode)))
+(electric-pair-mode)
 
 ;; enable narrow-to-region
 (put 'narrow-to-region 'disabled nil)

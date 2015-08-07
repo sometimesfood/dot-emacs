@@ -40,6 +40,7 @@
 (ensure-installed 'cider)
 (ensure-installed 'gist)
 (ensure-installed 'google-c-style)
+(ensure-installed 'ggtags)
 
 (when (macosx-p)
   (ensure-installed 'dash-at-point)

@@ -18,6 +18,7 @@
 (require 'sometimesfood-yasnippet)
 (require 'sometimesfood-mouse)
 (require 'sometimesfood-dired)
+(require 'sometimesfood-projectile)
 
 ;; programming languages
 (require 'sometimesfood-bibtex)

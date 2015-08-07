@@ -61,7 +61,6 @@
 
 (add-hook 'prog-mode-hook
           (lambda ()
-            (ggtags-mode 1)
-            (projectile-mode 1)))
+            (ggtags-mode 1)))
 
 (provide 'sometimesfood-basics)

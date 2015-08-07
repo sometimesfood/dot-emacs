@@ -1,1 +1,1 @@
-("~/src/wright/" "~/src/dot-emacs/")
+("~/src/dot-emacs/" "~/src/wright/")

@@ -41,6 +41,7 @@
 (ensure-installed 'gist)
 (ensure-installed 'google-c-style)
 (ensure-installed 'ggtags)
+(ensure-installed 'dockerfile-mode)
 
 (when (macosx-p)
   (ensure-installed 'dash-at-point)

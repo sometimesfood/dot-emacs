@@ -2,7 +2,7 @@
 (ensure-installed 'helm-projectile)
 
 (require 'helm-config)
-(ignore-errors (require 'helm-projectile)) ; until projectile #836 is fixed
+(require 'helm-projectile)
 
 ;; source: https://github.com/bbatsov/prelude/blob/master/modules/prelude-helm.el
 (defun helm-prelude ()

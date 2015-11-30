@@ -43,7 +43,7 @@
 (ensure-installed 'ggtags)
 (ensure-installed 'dockerfile-mode)
 
-(when (macosx-p)
+(when (osx-p)
   (ensure-installed 'dash-at-point)
   (ensure-installed 'reveal-in-finder))
 

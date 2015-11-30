@@ -4,7 +4,7 @@
 (column-number-mode 1)
 (setq show-trailing-whitespace t)
 
-(if (and (macosx-p) (gui-p))
+(if (and (osx-p) (gui-p))
     (progn
       (add-to-list 'default-frame-alist '(font . "Menlo-14"))
       (menu-bar-mode 1))

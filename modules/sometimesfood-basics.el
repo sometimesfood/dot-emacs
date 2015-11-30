@@ -1,7 +1,7 @@
-(defun macosx-p()
+(defun osx-p ()
   (string= "darwin" system-type))
 
-(defun gui-p()
+(defun gui-p ()
   (not (null window-system)))
 
 (setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
@@ -49,7 +49,7 @@
      (add-to-list 'auto-mode-alist `(,regexp . ,mode)))
    regexps))
 
-(if (macosx-p)
+(if (osx-p)
     (setq insert-directory-program (executable-find "gls")))
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))

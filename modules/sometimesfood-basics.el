@@ -4,8 +4,9 @@
 (defun gui-p ()
   (not (null window-system)))
 
-(setenv "PATH" (concat "/usr/local/bin:" (getenv "PATH")))
-(add-to-list 'exec-path "/usr/local/bin")
+(defun add-to-path (path)
+  (setenv "PATH" (concat path ":" (getenv "PATH")))
+  (add-to-list 'exec-path path))
 
 (set-terminal-coding-system 'utf-8)
 (set-keyboard-coding-system 'utf-8)
@@ -49,8 +50,11 @@
      (add-to-list 'auto-mode-alist `(,regexp . ,mode)))
    regexps))
 
-(if (osx-p)
-    (setq insert-directory-program (executable-find "gls")))
+(add-to-path "/usr/local/bin")
+
+(when (osx-p)
+  (add-to-path "/Library/TeX/texbin")
+  (setq insert-directory-program (executable-find "gls")))
 
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 

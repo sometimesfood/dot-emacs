@@ -42,6 +42,7 @@
 (ensure-installed 'google-c-style)
 (ensure-installed 'ggtags)
 (ensure-installed 'dockerfile-mode)
+(ensure-installed 'which-key)
 
 (when (osx-p)
   (ensure-installed 'dash-at-point)

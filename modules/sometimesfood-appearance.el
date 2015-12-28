@@ -12,6 +12,8 @@
 
 (load-theme 'solarized-light t)
 
+(which-key-setup-side-window-right-bottom)
+
 (require 'uniquify)
 (setq uniquify-buffer-name-style 'forward)
 

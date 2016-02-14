@@ -67,4 +67,6 @@
           (lambda ()
             (ggtags-mode 1)))
 
+(setq tab-always-indent 'complete)
+
 (provide 'sometimesfood-basics)

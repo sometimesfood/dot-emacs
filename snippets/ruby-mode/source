@@ -1,3 +1,4 @@
+# -*- mode: snippet -*-
 # name: source 'https://rubygems.org'
 # key: source
 # condition: (and (= 1 (line-number-at-pos)) (string= (file-name-nondirectory (buffer-file-name)) "Gemfile"))

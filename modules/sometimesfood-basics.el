@@ -51,6 +51,8 @@
    regexps))
 
 (add-to-path "/usr/local/bin")
+(add-to-path "~/go/bin")
+(add-to-path "~/bin")
 
 (when (osx-p)
   (add-to-path "/Library/TeX/texbin")

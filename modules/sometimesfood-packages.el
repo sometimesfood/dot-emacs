@@ -38,6 +38,7 @@
 (ensure-installed 'paredit)
 (ensure-installed 'highlight-parentheses)
 (ensure-installed 'cider)
+(ensure-installed 'clojure-mode)
 (ensure-installed 'gist)
 (ensure-installed 'google-c-style)
 (ensure-installed 'ggtags)

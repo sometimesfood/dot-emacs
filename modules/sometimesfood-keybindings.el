@@ -5,10 +5,11 @@
   (setq mac-option-modifier nil)
   (global-set-key (kbd "M-<f1>") 'dash-at-point))
 
+(setq compilation-read-command nil)
 (global-set-key (kbd "C-c h") 'helm-prelude)
 (global-set-key (kbd "<f5>") 'compile)
-(setq compilation-read-command nil)
 (global-set-key (kbd "<f9>") 'magit-status)
+(global-set-key (kbd "<f12>") 'helm-recentf)
 (global-unset-key [(control z)])
 (ffap-bindings)
 

@@ -2,6 +2,8 @@
 (setq org-ellipsis "⤵")
 (setq org-clock-idle-time 10)
 
+(setq org-clock-idle-time 10)
+
 ;; reftex
 (setq reftex-cite-format
       '((?\C-m . "\\autocite[]{%l}")

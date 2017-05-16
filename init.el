@@ -1,3 +1,5 @@
+(package-initialize)
+
 (defvar sometimesfood-base-dir
   (file-name-directory load-file-name)
   "The base directory of this Emacs configuration.")

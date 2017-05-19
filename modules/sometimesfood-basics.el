@@ -1,4 +1,4 @@
-(defun osx-p ()
+(defun macos-p ()
   (string= "darwin" system-type))
 
 (defun gui-p ()
@@ -54,7 +54,7 @@
 (add-to-path "~/go/bin")
 (add-to-path "~/bin")
 
-(when (osx-p)
+(when (macos-p)
   (add-to-path "/Library/TeX/texbin")
   (setq insert-directory-program (executable-find "gls")))
 

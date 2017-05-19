@@ -43,7 +43,7 @@
 (ensure-installed 'dockerfile-mode)
 (ensure-installed 'which-key)
 
-(when (osx-p)
+(when (macos-p)
   (ensure-installed 'dash-at-point)
   (ensure-installed 'reveal-in-finder))
 

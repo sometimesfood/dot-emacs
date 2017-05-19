@@ -50,6 +50,6 @@
 
 (when (macos-p)
   (ensure-installed 'dash-at-point)
-  (ensure-installed 'reveal-in-finder))
+  (ensure-installed 'reveal-in-osx-finder))
 
 (provide 'sometimesfood-packages)

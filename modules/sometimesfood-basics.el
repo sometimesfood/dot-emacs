@@ -62,6 +62,9 @@
 
 (electric-pair-mode)
 
+(defun add-local-hook (hook function)
+  (add-hook hook function nil t))
+
 ;; enable narrow-to-region
 (put 'narrow-to-region 'disabled nil)
 

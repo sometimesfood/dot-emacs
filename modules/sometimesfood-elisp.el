@@ -6,11 +6,11 @@ compiled file exists."
              (file-exists-p (byte-compile-dest-file buffer-file-name)))
     (byte-compile-file buffer-file-name)))
 
-(add-hook 'after-save-hook 'byte-compile-current-buffer)
-
 (add-hook 'emacs-lisp-mode-hook
           (lambda ()
             (paredit-mode)
-            (highlight-parentheses-mode)))
+            (highlight-parentheses-mode)
+            (add-local-hook 'after-save-hook
+                            'byte-compile-current-buffer)))
 
 (provide 'sometimesfood-elisp)

@@ -30,3 +30,4 @@
 (require 'sometimesfood-ruby)
 (require 'sometimesfood-clojure)
 (require 'sometimesfood-orgmode)
+(require 'sometimesfood-golang)

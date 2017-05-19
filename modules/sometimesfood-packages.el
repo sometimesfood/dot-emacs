@@ -1,16 +1,21 @@
-(add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/") t)
+(setq package-archives
+      '(("gnu"          . "https://elpa.gnu.org/packages/")
+        ("melpa-stable" . "https://stable.melpa.org/packages/")
+        ("melpa"        . "https://melpa.org/packages/"))
+      package-archive-priorities
+      '(("melpa-stable" . 10)
+        ("gnu"          . 5)
+        ("melpa"        . 0)))
 
-;; pin packages to stable MELPA version if possible
-(add-to-list 'load-path
-             (expand-file-name "submodules/fixmelpa" sometimesfood-base-dir))
-(require 'fixmelpa)
-(defadvice package-refresh-contents
-    (before ad-fixmelpa-refresh-pinned-packages activate)
-  "Refresh pinned packages before refreshing package contents."
-  (fixmelpa-refresh-pinned-packages))
+; use fixmelpa on Emacs <25
+(when (< emacs-major-version 25)
+  (add-to-list 'load-path
+               (expand-file-name "submodules/fixmelpa" sometimesfood-base-dir))
+  (require 'fixmelpa)
+  (defadvice package-refresh-contents
+      (before ad-fixmelpa-refresh-pinned-packages activate)
+    "Refresh pinned packages before refreshing package contents."
+    (fixmelpa-refresh-pinned-packages)))
 
 (defun ensure-installed (package)
   "Check if package is installed, install it if not"

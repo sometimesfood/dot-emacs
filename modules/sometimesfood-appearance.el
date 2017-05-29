@@ -15,7 +15,8 @@
 
 (which-key-setup-side-window-right-bottom)
 
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'forward)
+(use-package uniquify
+  :init
+  (setq uniquify-buffer-name-style 'forward))
 
 (provide 'sometimesfood-appearance)

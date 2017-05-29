@@ -1,4 +1,4 @@
-(package-initialize)
+;; (package-initialize)
 
 (defvar sometimesfood-base-dir
   (file-name-directory load-file-name)
@@ -11,8 +11,8 @@
 (load custom-file)
 
 ;; basic setup
-(require 'sometimesfood-basics)
 (require 'sometimesfood-packages)
+(require 'sometimesfood-basics)
 
 ;; misc
 (require 'sometimesfood-appearance)

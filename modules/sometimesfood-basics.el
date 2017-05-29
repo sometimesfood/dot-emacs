@@ -18,10 +18,12 @@
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 
-(require 'recentf)
-(setq recentf-max-saved-items 200
-      recentf-max-menu-items 15)
-(recentf-mode t)
+(use-package recentf
+  :init
+  (setq recentf-max-saved-items 200)
+  (setq recentf-max-menu-items 15)
+  :config
+  (recentf-mode t))
 
 (ido-mode 1)
 (setq ido-ignore-buffers

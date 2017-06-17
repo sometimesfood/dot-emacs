@@ -6,7 +6,8 @@
 
 (if (and (macos-p) (gui-p))
     (progn
-      (add-to-list 'default-frame-alist '(font . "Menlo-14"))
+      (set-face-font 'default "Menlo-14")
+      (set-face-font 'variable-pitch "Geneva")
       (menu-bar-mode 1))
   (menu-bar-mode -1))
 

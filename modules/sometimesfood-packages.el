@@ -7,16 +7,6 @@
         ("gnu"          . 5)
         ("melpa"        . 0)))
 
-; use fixmelpa on Emacs <25
-(when (< emacs-major-version 25)
-  (add-to-list 'load-path
-               (expand-file-name "submodules/fixmelpa" sometimesfood-base-dir))
-  (require 'fixmelpa)
-  (defadvice package-refresh-contents
-      (before ad-fixmelpa-refresh-pinned-packages activate)
-    "Refresh pinned packages before refreshing package contents."
-    (fixmelpa-refresh-pinned-packages)))
-
 (defun ensure-installed (package)
   "Check if package is installed, install it if not"
   (unless (package-installed-p package)

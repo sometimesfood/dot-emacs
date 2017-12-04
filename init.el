@@ -11,6 +11,7 @@
 (load custom-file)
 
 ;; basic setup
+(require 'sometimesfood-util)
 (require 'sometimesfood-packages)
 (require 'sometimesfood-basics)
 

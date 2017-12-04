@@ -49,9 +49,7 @@
 (use-package which-key :ensure t :defer t)
 (use-package tex :ensure auctex :defer t)
 
-;; ;; disable macOS stuff for now (circular dependency between
-;; ;; sometimesfood-packages and sometimesfood-basics because of macos-p)
-;; (use-package dash-at-point :ensure t :defer t :if (macos-p))
-;; (use-package reveal-in-osx-finder :ensure t :defer :if (macos-p))
+(use-package dash-at-point :ensure t :defer t :if (macos-p))
+(use-package reveal-in-osx-finder :ensure t :defer :if (macos-p))
 
 (provide 'sometimesfood-packages)

@@ -33,6 +33,9 @@
       kept-old-versions 2
       version-control t)
 
+;; stop cluttering ~/.emacs.d/auto-save-list
+(setq auto-save-list-file-prefix "~/.emacs.d/backups/auto-save-list/.saves-")
+
 ;; chmod +x files that have a shebang
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 

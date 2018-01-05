@@ -4,7 +4,6 @@
   :ensure t
   :defer t
   :init
-
   ;; source: https://github.com/bbatsov/prelude/blob/master/modules/prelude-helm.el
   (defun helm-prelude ()
     "Preconfigured `helm'."

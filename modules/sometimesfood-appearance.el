@@ -1,3 +1,6 @@
+(use-package solarized-theme :ensure t :defer t)
+(use-package zenburn-theme :ensure t :defer t :no-require t)
+
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-startup-screen t)

@@ -1,5 +1,8 @@
-(projectile-global-mode 1)
-(setq projectile-switch-project-action 'projectile-dired)
-(setq projectile-create-missing-test-files t)
+(use-package projectile
+  :ensure t
+  :config
+  (projectile-global-mode 1)
+  (setq projectile-switch-project-action 'projectile-dired)
+  (setq projectile-create-missing-test-files t))
 
 (provide 'sometimesfood-projectile)

@@ -7,4 +7,4 @@
  '(line-move-visual nil)
  '(package-selected-packages
    (quote
-    (go-mode dired-single ggtags paredit multiple-cursors helm-projectile helm-dash reveal-in-osx-finder which-key dockerfile-mode google-c-style gist cider highlight-parentheses yaml-mode scss-mode coffee-mode haml-mode markdown-mode ledger-mode yasnippet magit haskell-mode zenburn-theme solarized-theme dash-at-point))))
+    (php-mode ibuffer-vc auctex go-mode dired-single ggtags paredit multiple-cursors helm-projectile helm-dash reveal-in-osx-finder which-key dockerfile-mode google-c-style gist cider highlight-parentheses yaml-mode scss-mode coffee-mode haml-mode markdown-mode ledger-mode yasnippet magit haskell-mode zenburn-theme solarized-theme dash-at-point))))

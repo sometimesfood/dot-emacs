@@ -7,6 +7,7 @@
 
 (setq compilation-read-command nil)
 (global-set-key (kbd "C-c h") 'helm-prelude)
+(global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "<f5>") 'compile)
 (global-set-key (kbd "<f9>") 'magit-status)
 (global-set-key (kbd "<f12>") 'helm-recentf)

@@ -18,6 +18,7 @@
 ;; misc
 (require 'sometimesfood-appearance)
 (require 'sometimesfood-dired)
+(require 'sometimesfood-ibuffer)
 (require 'sometimesfood-helm)
 (require 'sometimesfood-keybindings)
 (require 'sometimesfood-mouse)

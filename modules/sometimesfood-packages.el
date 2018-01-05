@@ -1,3 +1,5 @@
+(setq package-enable-at-startup nil)
+
 (setq package-archives
       '(("gnu"          . "https://elpa.gnu.org/packages/")
         ("melpa-stable" . "https://stable.melpa.org/packages/")
@@ -7,39 +9,37 @@
         ("gnu"          . 5)
         ("melpa"        . 0)))
 
-(defun ensure-installed (package)
-  "Check if package is installed, install it if not"
-  (unless (package-installed-p package)
-    (package-install package)))
+(package-initialize)
 
-(unless package-archive-contents
-  (package-refresh-contents))
+; use fixmelpa on Emacs <25
+(when (< emacs-major-version 25)
+  (add-to-list 'load-path
+               (expand-file-name "submodules/fixmelpa" sometimesfood-base-dir))
+  (require 'fixmelpa)
+  (defadvice package-refresh-contents
+      (before ad-fixmelpa-refresh-pinned-packages activate)
+    "Refresh pinned packages before refreshing package contents."
+    (fixmelpa-refresh-pinned-packages)))
 
-(ensure-installed 'solarized-theme)
-(ensure-installed 'zenburn-theme)
-(ensure-installed 'haskell-mode)
-(ensure-installed 'magit)
-(ensure-installed 'yasnippet)
-(ensure-installed 'ledger-mode)
-(ensure-installed 'markdown-mode)
-(ensure-installed 'haml-mode)
-(ensure-installed 'coffee-mode)
-(ensure-installed 'scss-mode)
-(ensure-installed 'yaml-mode)
-(ensure-installed 'dired-single)
-(ensure-installed 'go-mode)
-(ensure-installed 'paredit)
-(ensure-installed 'highlight-parentheses)
-(ensure-installed 'cider)
-(ensure-installed 'clojure-mode)
-(ensure-installed 'gist)
-(ensure-installed 'google-c-style)
-(ensure-installed 'ggtags)
-(ensure-installed 'dockerfile-mode)
-(ensure-installed 'which-key)
+(unless (package-installed-p 'use-package)
+  (package-refresh-contents)
+  (package-install 'use-package))
 
-(when (macos-p)
-  (ensure-installed 'dash-at-point)
-  (ensure-installed 'reveal-in-osx-finder))
+(use-package magit :ensure t :defer t)
+(use-package ledger-mode :ensure t :defer t)
+(use-package markdown-mode :ensure t :defer t)
+(use-package yaml-mode :ensure t :defer t)
+(use-package dired-single :ensure t :defer t)
+(use-package paredit :ensure t :defer t)
+(use-package highlight-parentheses :ensure t :defer t)
+(use-package gist :ensure t :defer t)
+(use-package google-c-style :ensure t :defer t)
+(use-package ggtags :ensure t :defer t)
+(use-package dockerfile-mode :ensure t :defer t)
+(use-package which-key :ensure t :defer t)
+(use-package tex :ensure auctex :defer t)
+
+(use-package dash-at-point :ensure t :defer t :if (macos-p))
+(use-package reveal-in-osx-finder :ensure t :defer :if (macos-p))
 
 (provide 'sometimesfood-packages)

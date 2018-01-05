@@ -1,3 +1,6 @@
+(use-package solarized-theme :ensure t :defer t)
+(use-package zenburn-theme :ensure t :defer t :no-require t)
+
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 (setq inhibit-startup-screen t)
@@ -15,7 +18,8 @@
 
 (which-key-setup-side-window-right-bottom)
 
-(require 'uniquify)
-(setq uniquify-buffer-name-style 'forward)
+(use-package uniquify
+  :init
+  (setq uniquify-buffer-name-style 'forward))
 
 (provide 'sometimesfood-appearance)

@@ -3,6 +3,9 @@
 (setq org-clock-idle-time 10)
 
 (setq org-clock-idle-time 10)
+(with-eval-after-load 'org
+;  (modify-syntax-entry ?/ "(/" org-mode-syntax-table)
+  (modify-syntax-entry ?= "(=" org-mode-syntax-table))
 
 ;; reftex
 (setq reftex-cite-format

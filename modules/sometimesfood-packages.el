@@ -11,8 +11,9 @@
 
 ; disable TLS 1.3 to work around #34341; see
 ; https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34341 for reference
-(if (version< emacs-version "26.3")
-    (setq gnutls-algorithm-priority "normal:-vers-tls1.3"))
+(when (and (>= libgnutls-version 30603)
+           (version< emacs-version "26.3"))
+  (setq gnutls-algorithm-priority "normal:-vers-tls1.3"))
 
 (package-initialize)
 

@@ -40,7 +40,7 @@
 (use-package dockerfile-mode :ensure t :defer t)
 (use-package which-key :ensure t :defer t)
 (use-package tex :ensure auctex :defer t)
-
+(use-package deadgrep :ensure t :defer t)
 (use-package dash-at-point :ensure t :defer t :if (macos-p))
 (use-package reveal-in-osx-finder :ensure t :defer :if (macos-p))
 (use-package dumb-jump

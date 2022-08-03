@@ -15,7 +15,10 @@
   :config
   (recentf-mode t))
 
-(ido-mode 1)
+;; Note: ffap mode for ido-find-file can be enabled using
+;; (setq ido-use-filename-at-point 'guess)
+
+(ido-mode 'buffers)
 (setq ido-ignore-buffers
       '("\\` " "^\*Messages" "^\*Back" "^\*Compile" "^\*helm" "^\*Completion"))
 

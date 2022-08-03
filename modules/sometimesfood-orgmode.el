@@ -1,6 +1,8 @@
 (setq org-export-allow-bind-keywords t)
 (setq org-ellipsis "⤵")
 (setq org-clock-idle-time 10)
+(setq org-startup-indented t)
+(setq org-startup-folded t)
 
 (with-eval-after-load 'org
 ;  (modify-syntax-entry ?/ "(/" org-mode-syntax-table)

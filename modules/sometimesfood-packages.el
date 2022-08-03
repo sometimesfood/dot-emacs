@@ -9,10 +9,14 @@
         ("gnu"          . 5)
         ("melpa"        . 0)))
 
-; disable TLS 1.3 to work around #34341; see
-; https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34341 for reference
-(when (and (>= libgnutls-version 30603)
-           (version< emacs-version "26.3"))
+;; disable TLS 1.3 to work around #34341 and #54096 if necessary, see
+;; https://debbugs.gnu.org/cgi/bugreport.cgi?bug=34341 and
+;; https://debbugs.gnu.org/cgi/bugreport.cgi?bug=54096 for reference
+(when
+    (or (and (>= libgnutls-version 30603)
+             (version< emacs-version "26.3"))
+        (and (macos-p)
+             (version= emacs-version "27.2")))
   (setq gnutls-algorithm-priority "normal:-vers-tls1.3"))
 
 (package-initialize)

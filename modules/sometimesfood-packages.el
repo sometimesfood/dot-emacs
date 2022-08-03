@@ -19,7 +19,9 @@
              (version= emacs-version "27.2")))
   (setq gnutls-algorithm-priority "normal:-vers-tls1.3"))
 
-(package-initialize)
+
+(when (< emacs-major-version 27)
+  (package-initialize))
 
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)

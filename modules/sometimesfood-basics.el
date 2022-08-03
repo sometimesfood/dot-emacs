@@ -10,7 +10,7 @@
 
 (use-package recentf
   :init
-  (setq recentf-max-saved-items 200)
+  (setq recentf-max-saved-items 2000)
   (setq recentf-max-menu-items 15)
   :config
   (recentf-mode t))

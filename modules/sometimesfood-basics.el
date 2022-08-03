@@ -15,6 +15,13 @@
   :config
   (recentf-mode t))
 
+(savehist-mode 1)
+(setq savehist-additional-variables
+      '(kill-ring search-ring regexp-search-ring))
+(setq savehist-file
+      (expand-file-name "tmp/savehist" sometimesfood-base-dir))
+(setq history-length 10000)
+
 ;; Note: ffap mode for ido-find-file can be enabled using
 ;; (setq ido-use-filename-at-point 'guess)
 

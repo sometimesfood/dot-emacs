@@ -16,4 +16,7 @@
         (?n . "\\nocite{%l}")))
 (setq reftex-sort-bibtex-matches 'author)
 
+(add-hook 'org-mode-hook
+          (lambda () (electric-indent-local-mode -1)))
+
 (provide 'sometimesfood-orgmode)

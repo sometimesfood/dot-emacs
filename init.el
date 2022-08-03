@@ -21,6 +21,7 @@
 (require 'sometimesfood-ibuffer)
 (require 'sometimesfood-helm)
 (require 'sometimesfood-keybindings)
+(require 'sometimesfood-magit)
 (require 'sometimesfood-mouse)
 (require 'sometimesfood-multiple-cursors)
 (require 'sometimesfood-projectile)

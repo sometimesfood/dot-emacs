@@ -3,6 +3,7 @@
   (setq mac-command-key-is-meta t)
   (setq mac-command-modifier 'meta)
   (setq mac-option-modifier nil)
+  (setq mac-function-modifier 'super)
   (global-set-key (kbd "M-<f1>") 'dash-at-point))
 
 (setq compilation-read-command nil)

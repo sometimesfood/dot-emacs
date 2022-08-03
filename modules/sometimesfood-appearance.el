@@ -10,7 +10,7 @@
 (if (and (macos-p) (gui-p))
     (progn
       (set-face-font 'default "Menlo-14")
-      (set-face-font 'variable-pitch "Geneva")
+      ;; (set-face-font 'variable-pitch "Geneva")
       (menu-bar-mode 1))
   (menu-bar-mode -1))
 

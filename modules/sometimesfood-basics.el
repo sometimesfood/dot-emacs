@@ -64,10 +64,6 @@
 ;; enable narrow-to-region
 (put 'narrow-to-region 'disabled nil)
 
-(add-hook 'prog-mode-hook
-          (lambda ()
-            (ggtags-mode 1)))
-
 (setq tab-always-indent 'complete)
 
 (provide 'sometimesfood-basics)

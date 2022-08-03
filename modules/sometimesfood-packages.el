@@ -37,12 +37,16 @@
 (use-package jinja2-mode :ensure t :defer t)
 (use-package gist :ensure t :defer t)
 (use-package google-c-style :ensure t :defer t)
-(use-package ggtags :ensure t :defer t)
 (use-package dockerfile-mode :ensure t :defer t)
 (use-package which-key :ensure t :defer t)
 (use-package tex :ensure auctex :defer t)
 
 (use-package dash-at-point :ensure t :defer t :if (macos-p))
 (use-package reveal-in-osx-finder :ensure t :defer :if (macos-p))
+(use-package dumb-jump
+  :ensure t
+  :defer t
+  :init
+  (add-hook 'xref-backend-functions #'dumb-jump-xref-activate))
 
 (provide 'sometimesfood-packages)

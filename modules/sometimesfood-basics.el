@@ -58,6 +58,9 @@
 ;; prevent ffap from pinging hosts
 (setq ffap-machine-p-known 'accept)
 
+;; highlight excessively long Git commit summaries
+(setq git-commit-summary-max-length 50)
+
 (add-to-path "/usr/local/bin")
 (add-to-path "~/go/bin")
 (add-to-path "~/bin")

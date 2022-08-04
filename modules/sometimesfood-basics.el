@@ -69,4 +69,6 @@
 
 (setq tab-always-indent 'complete)
 
+(setq tramp-terminal-type "emacs")
+
 (provide 'sometimesfood-basics)

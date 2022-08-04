@@ -49,6 +49,9 @@
 ;; chmod +x files that have a shebang
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 
+;; end sentences with a period instead of double space
+(setq sentence-end-double-space nil)
+
 (add-to-path "/usr/local/bin")
 (add-to-path "~/go/bin")
 (add-to-path "~/bin")

@@ -24,6 +24,7 @@
 (require 'sometimesfood-magit)
 (require 'sometimesfood-mouse)
 (require 'sometimesfood-multiple-cursors)
+(require 'sometimesfood-plantuml)
 (require 'sometimesfood-projectile)
 (require 'sometimesfood-webdev)
 (require 'sometimesfood-yasnippet)

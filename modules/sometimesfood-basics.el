@@ -52,6 +52,9 @@
 ;; end sentences with a period instead of double space
 (setq sentence-end-double-space nil)
 
+;; avoid polling in auto-revert-mode if possible
+(setq auto-revert-avoid-polling t)
+
 (add-to-path "/usr/local/bin")
 (add-to-path "~/go/bin")
 (add-to-path "~/bin")

@@ -37,6 +37,7 @@
 (require 'sometimesfood-golang)
 (require 'sometimesfood-haskell)
 (require 'sometimesfood-orgmode)
+(require 'sometimesfood-org-roam)
 (require 'sometimesfood-ruby)
 
 ;; load work in progress file if present

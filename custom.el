@@ -9,7 +9,7 @@
  '(highlight-parentheses-colors '("#2aa198" "#b58900" "#268bd2" "#6c71c4" "#859900"))
  '(line-move-visual nil)
  '(package-selected-packages
-   '(solarized-theme zenburn-theme yasnippet yaml-mode which-key use-package terraform-mode scss-mode reveal-in-osx-finder plantuml-mode php-mode paredit multiple-cursors markdown-mode magit ledger-mode jinja2-mode ibuffer-vc htmlize highlight-parentheses helm-projectile helm-dash haskell-mode haml-mode google-c-style go-mode gist dumb-jump dockerfile-mode dired-single deadgrep dash-at-point coffee-mode cider auctex)))
+   '(nftables-mode solarized-theme zenburn-theme yasnippet yaml-mode which-key use-package terraform-mode scss-mode reveal-in-osx-finder plantuml-mode php-mode paredit multiple-cursors markdown-mode magit ledger-mode jinja2-mode ibuffer-vc htmlize highlight-parentheses helm-projectile helm-dash haskell-mode haml-mode google-c-style go-mode gist dumb-jump dockerfile-mode dired-single deadgrep dash-at-point coffee-mode cider auctex)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

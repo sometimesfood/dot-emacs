@@ -45,6 +45,7 @@
 (use-package deadgrep :ensure t :defer t)
 (use-package dash-at-point :ensure t :defer t :if (macos-p))
 (use-package reveal-in-osx-finder :ensure t :defer :if (macos-p))
+(use-package nftables-mode :ensure t :defer t)
 (use-package dumb-jump
   :ensure t
   :defer t

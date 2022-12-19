@@ -3,10 +3,12 @@
 (setq package-archives
       '(("melpa-stable" . "https://stable.melpa.org/packages/")
         ("gnu"          . "https://elpa.gnu.org/packages/")
+        ("nongnu"       . "https://elpa.nongnu.org/nongnu/")
         ("melpa"        . "https://melpa.org/packages/"))
       package-archive-priorities
       '(("melpa-stable" . 20)
         ("gnu"          . 10)
+        ("nongnu"       . 5)
         ("melpa"        . 0)))
 
 ;; disable TLS 1.3 to work around #34341 and #54096 if necessary, see

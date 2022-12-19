@@ -5,8 +5,8 @@
         ("gnu"          . "https://elpa.gnu.org/packages/")
         ("melpa"        . "https://melpa.org/packages/"))
       package-archive-priorities
-      '(("melpa-stable" . 10)
-        ("gnu"          . 5)
+      '(("melpa-stable" . 20)
+        ("gnu"          . 10)
         ("melpa"        . 0)))
 
 ;; disable TLS 1.3 to work around #34341 and #54096 if necessary, see

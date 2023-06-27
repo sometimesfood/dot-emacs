@@ -23,7 +23,6 @@
 
 (use-package org-contrib
   :ensure t
-  :defer t
   :config
   (require 'ob-ledger)
   (org-babel-do-load-languages

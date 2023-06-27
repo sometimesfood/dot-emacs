@@ -38,6 +38,7 @@
 (require 'sometimesfood-haskell)
 (require 'sometimesfood-orgmode)
 (require 'sometimesfood-ruby)
+(require 'sometimesfood-smalltalk)
 
 ;; load work in progress file if present
 (load (expand-file-name "wip.el" sometimesfood-base-dir) t)

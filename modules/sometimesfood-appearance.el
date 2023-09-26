@@ -1,4 +1,4 @@
-(use-package solarized-theme :ensure t :defer t)
+(use-package solarized-theme :ensure t :defer t :no-require t)
 (use-package zenburn-theme :ensure t :defer t :no-require t)
 
 (tool-bar-mode -1)

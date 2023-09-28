@@ -42,6 +42,11 @@
 ;; stop cluttering ~/.emacs.d/auto-save-list
 (setq auto-save-list-file-prefix "~/.emacs.d/backups/auto-save-list/.saves-")
 
+;; move files to trash instead of deleting them
+(setq delete-by-moving-to-trash t)
+(when (macos-p)
+  (setq trash-directory "~/.Trash"))
+
 ;; chmod +x files that have a shebang
 (add-hook 'after-save-hook 'executable-make-buffer-file-executable-if-script-p)
 

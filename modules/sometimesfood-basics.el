@@ -11,6 +11,12 @@
   :config
   (recentf-mode t))
 
+(use-package server
+  :defer t
+  :config
+  (unless (server-running-p)
+    (server-start)))
+
 (savehist-mode 1)
 (setq savehist-additional-variables
       '(kill-ring search-ring regexp-search-ring))

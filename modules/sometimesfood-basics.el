@@ -12,7 +12,7 @@
   (recentf-mode t))
 
 (use-package server
-  :defer t
+  :defer 2
   :config
   (unless (server-running-p)
     (server-start)))

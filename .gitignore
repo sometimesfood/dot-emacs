@@ -1,5 +1,6 @@
 *~
 *.elc
+/backups/
 /elpa/
 /tmp/
 /transient/
@@ -7,5 +8,6 @@
 /.mc-lists.el
 /bookmarks
 /projectile-bookmarks.eld
+/projects
 /tramp
 /wip.el

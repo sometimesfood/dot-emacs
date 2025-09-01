@@ -1,11 +1,11 @@
 *~
 *.elc
 /elpa/
-/.mc-lists.el
-/bookmarks
-/tramp
-/var/pcache/
-/projectile-bookmarks.eld
 /tmp/
 /transient/
+/var/pcache/
+/.mc-lists.el
+/bookmarks
+/projectile-bookmarks.eld
+/tramp
 /wip.el

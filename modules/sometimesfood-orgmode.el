@@ -5,7 +5,6 @@
 (setq org-startup-folded t)
 
 (with-eval-after-load 'org
-;  (modify-syntax-entry ?/ "(/" org-mode-syntax-table)
   (modify-syntax-entry ?= "(=" org-mode-syntax-table))
 
 ;; reftex

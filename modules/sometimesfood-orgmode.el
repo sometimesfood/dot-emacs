@@ -20,12 +20,9 @@
 (add-hook 'org-mode-hook
           (lambda () (electric-indent-local-mode -1)))
 
-(use-package org-contrib
-  :ensure t
-  :config
-  (require 'ob-ledger)
-  (org-babel-do-load-languages
-   'org-babel-load-languages
-   '((shell . t) (ledger . t) (emacs-lisp . t))))
+(require 'ob-ledger)
+(org-babel-do-load-languages
+ 'org-babel-load-languages
+ '((shell . t) (ledger . t) (emacs-lisp . t)))
 
 (provide 'sometimesfood-orgmode)

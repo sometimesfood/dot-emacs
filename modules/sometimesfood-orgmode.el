@@ -3,6 +3,7 @@
 (setq org-clock-idle-time 10)
 (setq org-startup-indented t)
 (setq org-startup-folded t)
+(setq org-priority-start-cycle-with-default nil)
 
 (with-eval-after-load 'org
   (modify-syntax-entry ?= "(=" org-mode-syntax-table))

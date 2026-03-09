@@ -1,4 +1,6 @@
 (use-package ibuffer-vc
+  :ensure t
+  :defer t
   :config
   (add-hook 'ibuffer-hook
             (lambda ()
